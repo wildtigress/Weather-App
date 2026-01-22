@@ -1,124 +1,155 @@
-📌 Weather-App
 
-A React-based weather application that lets users check the current weather for any city using data from a weather API.
+Live demo : https://drive.google.com/file/d/1sl-ILUkqv_-X2Ktt6-H9F1Oe-HXOgqBk/view?usp=drive_web
 
-Live demo (if deployed): Add link here
-Repository: https://drive.google.com/file/d/1sl-ILUkqv_-X2Ktt6-H9F1Oe-HXOgqBk/view?usp=drive_web
+# 🌦️ Weather Analytics Dashboard
 
-🚀 Features
+A modern **React-based Weather Analytics Dashboard** that displays real-time weather data and is designed to scale toward advanced analytics such as forecasts, historical trends, and interactive visualizations.
 
-🔎 City Search – Enter a city name to see its current weather.
+This project is built as part of a **Frontend Assignment** to demonstrate React fundamentals, API integration, clean project structure, and professional documentation practices.
 
-🌦️ Weather Details – Displays temperature, humidity, wind speed, and weather conditions.
+🔗 Repository: https://github.com/wildtigress/Weather-App
 
-📍 Optional Geolocation – Automatically detect your location weather (if implemented).
+---
 
-🔄 Responsive UI – Works smoothly on desktop and mobile screens.
+## 🚀 Features
 
-🛠️ Built With
+### ✅ Implemented
+- 🔍 Search weather by city name  
+- 🌡️ Display current temperature and weather conditions  
+- 💨 Show humidity and wind speed  
+- 🌐 Real-time weather data via external API  
+- ⚛️ React functional components with Hooks  
+- 📱 Responsive UI  
 
-✔️ React (Create React App)
-✔ JavaScript (ES6+)
-✔ CSS (Styling)
-✔ Weather API (e.g., OpenWeatherMap) — you’ll need an API key
-✔ Axios or Fetch for API calls
+### 🧩 Planned Enhancements
+- 📊 Multi-city dashboard  
+- 📅 5–7 day forecast  
+- ⏱️ Hourly forecast  
+- ⭐ Favorite cities with persistence  
+- 📈 Interactive charts (temperature, precipitation, wind)  
+- 🌡️ Celsius ↔ Fahrenheit toggle  
+- 🗂️ Redux Toolkit  
+- ⚡ Caching & auto-refresh  
+- 🔐 Authentication (Google Sign-In)  
 
-⚡ Getting Started
+---
 
-These instructions will help you run the project locally.
+## 🛠️ Tech Stack
 
-📥 Installation
+- **Frontend:** React, JavaScript (ES6+), HTML5, CSS3  
+- **API:** OpenWeatherMap / WeatherAPI  
+- **State Management:** React Hooks  
+- **HTTP Client:** Fetch API / Axios  
+- **Tooling:** Node.js, npm, Git, GitHub  
 
-Clone the repo
+---
 
+## 📁 Project Structure
+
+The project follows a modular and scalable folder structure:
+
+Weather-App/
+├── public/
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── App.js # Root application component
+│ ├── index.js # Entry point
+│ └── styles.css # Global styles
+├── package.json # Dependencies & scripts
+├── .gitignore
+└── README.md
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/wildtigress/Weather-App.git
-
-
-Navigate to project folder
-
+2️⃣ Navigate to the project directory
 cd Weather-App
-
-
-Install dependencies
-
+3️⃣ Install dependencies
 npm install
-
-
-Add API key
-
-Create a .env file in the root.
-
-Add your weather API key:
+4️⃣ Configure API Key
+Create a .env file in the root directory:
 
 REACT_APP_WEATHER_API_KEY=YOUR_API_KEY_HERE
+▶️ Available Commands
+All commands should be run from the project root directory.
 
-
-Start the app
-
+🔹 Start development server
 npm start
+Runs the app in development mode at:
 
-🧠 Usage
+http://localhost:3000
+🔹 Run tests
+npm test
+Launches the test runner in interactive watch mode.
 
-Enter a city’s name in the search box.
+🔹 Build for production
+npm run build
+Creates an optimized production build in the build/ folder.
 
-Press Enter or click the search button.
+🔹 Eject configuration (not recommended)
+npm run eject
+⚠️ This is a one-way operation and should be used only if customization is required.
 
-The app fetches weather data from the API and displays it.
+🧠 Application Workflow
+User enters a city name
 
-📦 Available Scripts
+API request is sent to the weather service
 
-Inside the project directory, you can run:
+Real-time weather data is returned
 
-Command	Description
-npm start	Runs app in development mode
-npm test	Launches test runner
-npm run build	Builds app for production
-npm run eject	Ejects CRA configuration
-🧪 Dependencies
+Data is displayed dynamically in the UI
 
-List of main dependencies (auto-generated from package.json):
+📊 API Integration
+The application fetches live weather data such as:
 
-react
+Current temperature
 
-react-dom
+Weather condition
 
-react-scripts
+Humidity
 
-axios (if used)
+Wind speed
 
-(Add versions if desired)
+Supported providers:
 
-📁 Project Structure
-Weather-App/
-├─ public/
-├─ src/
-│  ├─ components/
-│  ├─ App.js
-│  ├─ index.js
-│  └─ styles.css
-├─ .gitignore
-├─ package.json
-└─ README.md
+OpenWeatherMap
 
-🤝 Contributing
+WeatherAPI
 
-Contributions are welcome!
-To contribute:
+🎯 Project Objective
+The objective of this project is to build a Weather Analytics Dashboard that:
 
-Fork the repo
+Displays real-time weather information
 
-Create a new branch (git checkout -b feature-name)
+Helps users understand short-term weather conditions
 
-Commit your changes
+Lays the groundwork for long-term trend analysis and data visualization
+
+The architecture is intentionally extensible for future analytics features.
+
+🤝 Contribution
+Contributions are welcome.
+
+Fork the repository
+
+Create a feature branch
+
+git checkout -b feature-name
+Commit changes
 
 Push to your fork
 
 Open a Pull Request
 
-📝 License
+📜 License
+This project is licensed under the MIT License.
 
-Distributed under the MIT License. See LICENSE for details.
+👩‍💻 Author
+Samiksha Barnwal
+GitHub: https://github.com/wildtigress
 
-📬 Contact
-
-Created by wildtigress — feel free to open issues or reach out via GitHub.
